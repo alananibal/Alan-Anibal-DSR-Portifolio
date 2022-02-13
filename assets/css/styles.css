@@ -1,10 +1,11 @@
-/* Create CSS variables at the root of the document to be used throughout the style sheet */
+/* variables  */
 :root {
   --red: #2e0000;
   --White: #ffffff;
 
-}
 
+}
+/* General Styles */
 * {
     margin: 0;
     padding: 0;
@@ -12,15 +13,21 @@
   }
   
   body {
-    /* more on this crazy alphanumerical value in a minute! */
     color: var(--red);
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
   }
   
-  /* apply styles to <header> */
+section {
+  padding: 60px; 
+  background-color: #ffffff;
+}
+  /* Header Styles Start */
   header {
     padding: 20px 35px;
     background-color:var(--red);
+    display: flex;
+    flex-direction: row;  
+    justify-content: space-between;   
   }
   
   header h1 {
@@ -28,7 +35,7 @@
     font-size: 36px;
     color: #ffffff;
     margin: 0;
-    display: inline;
+    display: flex;
   }
   header a {
     text-decoration: none;
@@ -36,51 +43,180 @@
   }
   
   header nav {
-    float: right;
+    display: flex;
+   flex-direction: row;
     margin: 7px 0;
   }
   
-  header nav ul li {
-    display: inline;
+  header nav ul {
+    display: flex;
+   flex-direction: row;
   }
   
   header nav ul li a {
-    margin: 0 30px;
+    /* margin: 0 30px; */
     font-weight: lighter;
     font-size: 22px;
+    padding: 5px 10px;
   }
-  /* footer styles */
-  footer {
-    background: var(--red);
-    width: 100%;
-    padding: 40px 35px;
-  }
-  
-  footer h2 {
-    display: inline;
-    color: var(--White);
-    font-size: 30px;
-    margin: 0;
-  }
-  
-  footer div {
-    float: right;
-    line-height: 1.5;
-    text-align: right;
-  }
-  
-  footer a {
-    color: var(--White);
-  }
-  
-  section {
-    padding: 60px;
-  }
-  /* Hero Style Start */
+ 
+/* Header Styles End */
+
+
+/* Hero Style Start */
 .hero {
-  background-image: url(".assets\images\HeaderAlan Anibal.jpg");
+  background-color:black; 
   height: 600px;
   background-size: cover;
   background-position: center;
   position: relative;
+  
 }
+.herotitle {
+  position: absolute;
+  bottom: 120px;
+  right: 140px
+}
+.herotitle h1 {
+  font-size: 40px;
+  color: var(--White);
+  
+}
+/* Hero Styles End */
+
+
+
+
+/* main content styles */
+
+/* About Me and Work sections Styles start */
+
+
+main{
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+
+
+/* Link Blocks */
+.blocks{
+  margin: 25px 0;
+  padding: 12px 0;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.blocks h2 {
+  text-align: right;
+  border-right: 4px solid var(--red);
+  font-size: 25px;
+  padding-right: 12px;
+  line-height: 1;
+  flex: 0 0 20%;
+}
+
+.blocks .all-blocks, .blocks .Right-Block{
+  flex: 0 0 77%;
+}
+
+.all-blocks {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.project {
+  border: #2e0000 solid 2px;
+  min-height: 150px;
+  max-height: 150px;
+  flex-basis: calc(50%-1em);
+  display: flex;
+  align-items: flex-end;
+  padding: 0 0 20x 0;
+  margin: 1em;
+  text-decoration: none;
+  background-size: 150%;
+  /* font-size: 14px; */
+  background-repeat: no-repeat;
+}
+
+.project div{
+  padding: 8px;
+}
+
+.big-block {
+
+  min-height: 500px;
+ flex-basis: 100%;
+
+}
+
+
+
+
+.surf{
+  background-image: url('https://media.istockphoto.com/photos/surfing-picture-id160896636?k=20&m=160896636&s=612x612&w=0&h=Lh-q3Rx3xW2O6R12hXyAAGx3N_6grI4_-7LqaezaJYE=');
+
+}
+
+
+
+
+ /* footer styles */
+ /* footer {
+  background: var(--red);
+  width: 100%;
+  padding: 40px 35px;
+}
+
+footer h2 {
+  display: inline;
+  color: var(--White);
+  font-size: 30px;
+  margin: 0;
+}
+
+footer div {
+  float: right;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+footer a {
+  color: var(--White);
+}
+
+
+
+/* Need to finish this */
+/* @media screen and (max-width: 768px) { */
+  /* main,
+  nav,
+  section {
+    flex-direction: column;
+  } */
+
+  /* header { */
+
+    /* background-color:var(--red); */
+    /* display: flex; */
+
+    /* justify-content: space-between;    */
+  /* }
+  
+  header h1 {
+    font-weight: bold;
+    font-size: 22px;
+    color: #ffffff;
+    margin: 0;
+    
+  }
+}  */
