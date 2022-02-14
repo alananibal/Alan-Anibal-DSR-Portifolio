@@ -15,18 +15,18 @@ This project’s goal was to create a personal website with two sections and org
 
         * The Website has the following sections 
      	
-Section 1
--Header
--Footer
-Section 2
--About Me
- -My Work
+            **Section 1
+            -Header
+            -Footer
+            **Section 2
+            -About Me
+            -My Work
 ### 1.3. Contents
-		- This website presents the author’s name and a recent photo.
-                           -This website’s header presents a navigation bar with links to sections about me, my work, contact info, and resume. Each link in the navigation bar scrolls to the corresponding section when clicked.
-                           - My Work section has five applications. The first application image is presented in a larger size than the others
-		- When the user clicks on the images of the application they are taken to that deployed application. 
-                           -This website features a responsive layout that adapts to various screens and devices.
+-This website presents the author’s name and a recent photo.
+-This website’s header presents a navigation bar with links to sections about me, my work, contact info, and resume. Each linin the navigation bar scrolls to the corresponding section wheclicked.
+- My Work section has five applications. The first applicatioimage is presented in a larger size than the others
+- When the user clicks on the images of the application they are taken to thadeployed application. 
+-This website features a responsive layout that adapts tvarious screens and devices.
 
 * Desktop Browsers for Viewing Content
     -Internet Explorer 11
