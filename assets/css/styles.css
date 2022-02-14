@@ -2,7 +2,7 @@
 :root {
   --red: #2e0000;
   --White: #ffffff;
-  
+  --redwine:#5c0000;
 }
 /* General Styles */
 * {
@@ -15,17 +15,9 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
 section {
-  padding: 60px; 
-  background-color: #ffffff;
-}
-
-
-
-
-
-
-
-
+      padding: 60px; 
+      background-color: var(--White)
+  }
 /* Header Styles Start */
   header {
     padding: 20px 35px;
@@ -34,25 +26,20 @@ section {
     justify-content: space-between;
     flex-wrap: wrap;
     flex-direction: row;  
-       
   }
-  
   header h1 {
     font-weight: bold;
     font-size: 36px;
     color: var(--White);
     margin: 0;
-    
   }
   header a {
     text-decoration: none;
     color: var(--White);
   }
-  
   header nav {
     margin: 10px 0;
   }
-  
   header nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -60,30 +47,42 @@ section {
     align-items: center;
     list-style: none;
   }
-  
   header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
- 
 /* Header Styles End */
-
-
-
-
-
-
-
-
-
-
-
+/* footer styles start */
+footer {
+  background: var(--red);
+  width: 100%;
+  padding: 40px 35px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+footer h2 {
+  display: inline;
+  color: var(--White);
+  font-size: 30px;
+  margin: 0;
+}
+footer div {
+  line-height: 1.5;
+  text-align: right;
+}
+footer a {
+  color: var(--White);
+  margin: 3px;
+}
+/* Foter Styles end */
 /* Hero Style Start */
 .hero {
-  background-color:black; 
-  height: 600px;
+  background-image: url(../images/headerSantacruz.jpg);
+  height: 765px;
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -91,35 +90,22 @@ section {
 }
 .herotitle {
   position: absolute;
-  bottom: 120px;
+  bottom: 90px;
   right: 140px
 }
 .herotitle h1 {
   font-size: 40px;
-  color: var(--White);
-  
+  color: var(--redwine);
 }
 /* Hero Styles End */
 
-
-
-
 /* main content styles */
-
 /* About Me and Work sections Styles start */
-
-
 main{
   max-width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
-
-
-
-
-
-
 /* Link Blocks */
 .blocks{
   margin: 25px 0;
@@ -130,7 +116,6 @@ main{
   align-items: stretch;
   justify-content: space-between;
 }
-
 .blocks h2 {
   text-align: right;
   border-right: 4px solid var(--red);
@@ -150,7 +135,7 @@ justify-content: center;
 }
 .project {
   border: #2e0000 solid 2px;
-  min-width: 200px;
+  min-width: 270px;
   min-height: 150px;
   max-height: 150px;
   flex-basis: calc(50% - 2em);
@@ -170,46 +155,10 @@ justify-content: center;
 
   min-height: 500px;
  flex-basis: 100%;
-
 }
 .surf{
   background-image: url('https://media.istockphoto.com/photos/surfing-picture-id160896636?k=20&m=160896636&s=612x612&w=0&h=Lh-q3Rx3xW2O6R12hXyAAGx3N_6grI4_-7LqaezaJYE=');
-
 }
-
-
-
-
- /* footer styles */
- footer {
-  background: var(--red);
-  width: 100%;
-  padding: 40px 35px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-footer h2 {
-  display: inline;
-  color: var(--White);
-  font-size: 30px;
-  margin: 0;
-}
-
-footer div {
-  line-height: 1.5;
-  text-align: right;
-}
-
-footer a {
-  color: var(--White);
-  margin: 3px;
-}
-
-
-
-
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
  @media screen and (max-width: 1200px) {
   header {
