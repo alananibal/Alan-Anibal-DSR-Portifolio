@@ -94,6 +94,7 @@ footer a {
   right: 140px
 }
 .herotitle h1 {
+  margin: 3px;
   font-size: 40px;
   color: var(--redwine);
 }
@@ -144,7 +145,7 @@ justify-content: center;
   padding: 0 0 20px 0;
   margin: 1em;
   text-decoration: none;
-  background-size: 150%;
+  background-size: auto;
   font-size: 20px;
   background-repeat: no-repeat;
 }
@@ -157,10 +158,14 @@ justify-content: center;
  flex-basis: 100%;
 }
 .runbuddy{
-  background-image: url(../images/RunBuddy.jpg);
+  background-image: url(../images/hero-bg-bw.jpg);
+  background-position: auto;
+ 
 }
 .myfanpage{
-  background-image: url(../images/myfanpage.jpg);
+  background-image: url(../images/myfanpagebw.jpg);
+  background-position-x: center;
+  background-position-y: -100px;
 }
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
  @media screen and (max-width: 1200px) {
