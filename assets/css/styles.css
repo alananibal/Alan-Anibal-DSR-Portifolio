@@ -145,7 +145,7 @@ justify-content: center;
   margin: 1em;
   text-decoration: none;
   background-size: 150%;
-  font-size: 14px;
+  font-size: 20px;
   background-repeat: no-repeat;
 }
 .project div{
@@ -156,8 +156,11 @@ justify-content: center;
   min-height: 500px;
  flex-basis: 100%;
 }
-.surf{
-  background-image: url('https://media.istockphoto.com/photos/surfing-picture-id160896636?k=20&m=160896636&s=612x612&w=0&h=Lh-q3Rx3xW2O6R12hXyAAGx3N_6grI4_-7LqaezaJYE=');
+.runbuddy{
+  background-image: url(../images/RunBuddy.jpg);
+}
+.myfanpage{
+  background-image: url(../images/myfanpage.jpg);
 }
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
  @media screen and (max-width: 1200px) {
